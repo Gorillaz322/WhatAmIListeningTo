@@ -13,6 +13,10 @@ else
     report_error "Spotify not found"
 fi
 
+if ! command -v playerctl >/dev/null 2>&1 ; then
+    report_error "playerctl not found"
+fi
+
 if ! command -v virtualenv >/dev/null 2>&1 ; then
     report_error "virtualenv not found"
 fi
