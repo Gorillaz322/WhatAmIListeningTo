@@ -33,5 +33,5 @@ fi
 
 pip install -r "$DIR/requirements.txt"
 
-REPLACEMENT=".$DIR/run.sh"
-sudo sed -i "s@Exec=spotify@Exec=$REPLACEMENT@g" /usr/share/applications/spotify.desktop
+RUN_SCRIPT_PATH=".$DIR/run.sh"
+sudo sed -i "s@Exec=spotify@Exec=$RUN_SCRIPT_PATH@g" /usr/share/applications/spotify.desktop

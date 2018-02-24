@@ -1,3 +1,4 @@
 .idea/
 .venv/
 local/
+__pycache__/
